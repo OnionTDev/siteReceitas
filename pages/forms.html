@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Top</title>
+</head>
+<body>
+
+  <header>
+    <h2>Gusstoso Receitas</h2>
+    <nav>
+    <a href="./forms.html" target="_self" id="forms">Cadastro</a>
+    <a href="" class="menu">Sobre Nós</a>
+    <a href="" class="menu">Configurações</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+  <h1>Formulario de Cadastro</h1>
+  
+  <form action="./formsConcl.html" target="_self">
+    <fieldset>
+    <legend>Dados de Cadastro</legend>
+
+    <label for="nome">Nome:</label>
+    <input type="text" name="NOME" id="nome" placeholder="Flavin" required>
+
+    <br><br>
+
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" name="SOBRENOME" id="sobrenome" placeholder="do Pneu" required>
+
+    <br><br>
+
+    <label for="cpf">CPF (digite no formato exibido):</label>
+    <input type="text" name="CPF" id="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" required>
+
+    <br><br>
+    
+    <label for="email">E-Mail:</label>
+    <input type="email" name="EMAIL" id="email" placeholder="doPneuFlavin@gmail.com" required>
+
+    <br><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" name="SENHA" id="senha" placeholder="12345" required>
+
+    <br><br>
+
+    <label for="senhaConfirm">Confirme Sua Senha:</label>
+    <input type="password" name="SENHACONFIRM" id="senhaConfirm" placeholder="12345" required>
+
+    <br><br>
+
+    <input type="checkbox" name="termosDeUso" id="termos" value="true" required>
+    <label for="termos">Concordo com os <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Termos de Uso</a> </label>
+    
+    <br><br>
+
+    <input type="submit" value="Enviar">
+    </fieldset>
+
+  </form>
+  </main>
+  
+</body>
+</html>
